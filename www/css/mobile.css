@@ -1,0 +1,126 @@
+#nav {
+    padding-bottom:5%;
+}
+
+#login {
+    font-size:small;
+}
+
+#footer {
+    font-size: small !important;
+    padding:0;
+    padding-top:3%;
+    padding-bottom:2%;
+    text-align:center;
+}
+
+#intro {
+    font-size: 1.25em;
+}
+
+#intro h1 {
+    margin:0px;
+    margin-bottom:10%;
+    padding:0px;
+}
+
+#intro h1 img {
+    height:25px;
+    width:25px;
+}
+
+#header {
+    padding-bottom:4%;
+}
+
+#header h1 {
+    margin:0px;
+    padding:0px;
+    white-space: nowrap;
+    font-size:1.75em;
+}
+
+#header h1 img {
+    height:25px;
+    width:25px;
+    float:right;
+}
+
+#reset {
+    float:right;
+    font-size: 1em;
+    font-weight:700;
+    border: solid thin;
+    padding:2%;
+    background-color:#eee;
+    display:none;
+}
+
+#content {
+    padding-top: 0;
+    font-size:8pt;
+}
+
+#checkpoint_wrapper label {
+    font-size:6pt !important;
+}
+
+.optional {
+    font-style: italic;
+    display:block;
+}
+
+#timer_wrapper {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+input,button {
+    font-size:1em;
+}
+
+label {
+    font-size: 1.5em !important;
+    font-weight: 700;
+    padding-top: 3%;
+}
+#airport_timer {
+    padding-top:4%;
+    font-size:1em;
+}
+
+#timer_start{
+    padding:3%;
+}
+
+#timer_stop{
+    padding:3%;
+}
+
+#submit {
+    font-size: 1em;
+}
+
+#commentary {
+    padding-bottom:5%;
+    max-width:800px;
+}
+
+#tweet {
+	font-size: 1em;
+	display:inline;
+}
+
+.image {
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image img {
+    max-width:240px;
+}
+
+#lastname {
+    display:none;
+}

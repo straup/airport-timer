@@ -1,0 +1,48 @@
+{utf8_headers}<!DOCTYPE html> 
+<html>
+<head>
+	<title>{$cfg.site_name|escape}{if $page_title} | {$page_title|escape}{/if}</title>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="HandheldFriendly" content="true" />
+
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="Sat, 01 Dec 2001 00:00:00 GMT">
+	<script type="text/javascript" src="{$cfg.abs_root_url}javascript/twitter.widgets.js"></script>
+	<script type="text/javascript" src="{$cfg.abs_root_url}javascript/jquery-1.7.1.min.js"></script>
+{if $cfg.environment=='prod'}
+	<script type="text/javascript" src="{$cfg.abs_root_url}javascript/jquery.stopwatch.min.js"></script>
+	<script type="text/javascript" src="{$cfg.abs_root_url}javascript/airport.timer.min.js"></script>
+{else}
+	<script type="text/javascript" src="{$cfg.abs_root_url}javascript/airport.timer.js"></script>
+	<script type="text/javascript" src="{$cfg.abs_root_url}javascript/jquery.stopwatch.js"></script>
+{/if}
+	<link rel="stylesheet" type="text/css" media="all" href="{$cfg.abs_root_url}css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="{$cfg.abs_root_url}css/mobile.css" />
+	{$extra_head}
+</head>
+<body>
+
+<div id="main">
+	<div id="nav">
+		<div id="login_home" style="float: left;">
+			{* <a href="/">Home</a> *}
+		</div>
+		<div id="login" style="float: right;">
+{if $cfg.user.id}
+			you are signed as <strong>{$cfg.user.username|escape}</strong>
+			|
+			<a href="{$cfg.abs_root_url}signout/">signout</a>
+{else}
+	{if $cfg.enable_feature_signin}
+			<a href="{$cfg.abs_root_url}signin/">sign in with your twitter account</a>
+	{/if}
+{/if}
+		</div>
+		<br clear="all" />
+	</div>
+
+	<div id="content">

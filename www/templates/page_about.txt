@@ -1,0 +1,54 @@
+{include file="inc_head.txt"}
+
+<div id="about">
+
+<p><strong>Airport Timer</strong> is a simple web-based stopwatch application to
+record how long it takes to get through security at the airport.</p>
+
+<div class="image">
+<img src="{$cfg.abs_root_url}images/example-form.jpg" />
+</div>
+
+<p>To start you simply enter the 3-letter of the airport you're visiting and the
+name (or letter or number) of the terminal you're flying out of. You can also
+specify the name of the security checkpoint but that's optional.</p>
+
+<div class="image">
+<img src="{$cfg.abs_root_url}images/example-timer.jpg" />
+</div>
+
+<p>Then press the <code>start</code> button. Once you're through security press
+the <code>stop</code> button.</p>
+
+<div class="image">
+<img src="{$cfg.abs_root_url}images/example-twitter.jpg" />
+</div>
+
+<p>You'll then be asked to confirm the time it took to make it through
+security.</p>
+
+<p>If you say <q>yes</q> your time will be uploaded anonymously to <a href="https://pachube.com/feeds?q=straup&tag=airport-timer">Pachube</a> and you'll be given the opportunity to tell the Tweeterverse about the
+experience.</p>
+
+<p>And yes, it will work on your phone.</p>
+
+<div class="image">
+<img src="{$cfg.abs_root_url}images/example-timer-iphone.jpg" />
+</div>
+
+<p>That's it. <a
+href="http://www.nearfuturelaboratory.com/2011/11/30/airport-timer/" target="_nearfuture">There's
+also a blog post</a>, if you want the long version.</p>
+
+<p class="getstarted">
+{if $cfg.user.id}
+<a href="{$cfg.abs_root_url}">Get started!</a>
+{else}
+To get started you'll need to <a href="{$cfg.abs_root_url}signin/">sign in with your
+Twitter account</a>.</div>
+{/if}
+</p>
+
+</div>
+
+{include file="inc_foot.txt"}

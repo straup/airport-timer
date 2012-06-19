@@ -1,0 +1,12 @@
+	</div>
+
+	<div id="footer">
+this is a thing by <a href="http://www.aaronstraupcope.com/">aaron<span id="lastname"> straup cope</span></a>
+|
+<a href="{$cfg.abs_root_url}about/">tell me more</a>
+	</div>
+
+</div>
+
+</body>
+</html>

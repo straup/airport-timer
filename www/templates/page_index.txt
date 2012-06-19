@@ -1,0 +1,48 @@
+{capture assign="extra_head"}<script type="text/javascript">$(document).ready(airport_timer);</script>{/capture}
+{include file='inc_head.txt'}
+
+<div id="header">
+<h1><img src="{$cfg.abs_root_url}images/apple-touch-icon.png" height="50" width="50" alt="" style="float:left;margin-right:10px;"/> Airport Timer</h1>
+<div id="reset">reset</div>
+<br clear="all" />
+</div>
+
+<form id="airport_timer">
+
+	<div id="stopwatch"></div>
+	<div id="commentary"></div>
+
+	<div id="airport_wrapper"">
+		<label for="airport">Airport Code</label>
+		<input type="text" name="airport" id="airport" value="" />
+	</div>
+
+	<div id="terminal_wrapper">
+		<label for="terminal">Terminal</label>
+		<input type="text" id="terminal" name="terminal" value="" />
+	</div>
+
+	<div id="gate_wrapper">
+		<label for="gate">Gate</label>
+		<input type="text" name="gate" id="terminal" value="" />
+	</div>
+
+	<div id="checkpoint_wrapper">
+		<label for="checkpoint">Checkpoint<div class="optional"> (optional)</div></label>
+		<input type="text" name="checkpoint" id="checkpoint" value="" />
+	</div>
+
+	<br clear="all" />
+
+	<div id="timer_wrapper">
+		<button id="timer_start">Start</button>
+		<button id="timer_stop">Stop</button>
+	</div>
+
+	<div id="submit_wrapper">
+		<input type="submit" value="this is SAD but TRUE" id="submit" />
+	</div>
+
+</form>
+
+{include file='inc_foot.txt'}

@@ -1,0 +1,31 @@
+{
+
+	"default_format": "json",
+
+	"formats": [
+		"json"
+	],
+
+	"methods": {
+
+		"test.echo": {
+			"documented": 1,
+			"enabled": 1,
+			"library": "api_test"
+		},
+
+		"test.error": {
+			"documented": 1,
+			"enabled": 1,
+			"library": "api_test"
+		},
+
+		"airports.recordWaitTime": {
+			"documented": 0,
+			"enabled": 1,
+			"requires_auth": 1,
+			"library": "api_airports"
+		}
+	}
+
+}

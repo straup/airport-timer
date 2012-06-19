@@ -1,0 +1,14 @@
+{include file="inc_head.txt"}
+
+<div id="intro">
+
+<h1>Airport Timer <img src="{$cfg.abs_root_url}images/apple-touch-icon.png" height="50" width="50" alt="" style="margin-:10px;"/></h1>
+
+<p style="font-size:1em;"><strong>Airport Timer</strong> is a simple web-based stopwatch application to
+record how long it takes to get through security at the airport.</p>
+
+<p style="font-size:1em;">Would you <a href="{$cfg.abs_root_url}about/">like to know more</a> or just dive in and get started by
+<a href="{$cfg.abs_root_url}signin/">signing in with your Twitter account</a> ?</p>
+</div>
+
+{include file="inc_foot.txt"}

@@ -1,0 +1,297 @@
+body {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #fff;
+}
+
+#main {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	max-width: 900px;
+	border: none;
+}
+
+#intro {
+    font-size:2em;
+}
+
+#intro h1 {
+    font-family:serif;
+}
+
+#intro p {
+    font-size: 1em !important;
+}
+
+p {
+    font-family: serif;
+    font-size: 1.6em;
+}
+
+.getstarted {
+    font-style: italic;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#nav a {
+    color: #999;
+    font-weight: 700;
+}
+
+#footer a {
+    color: #999;
+    font-weight: 700;
+}
+
+#content {
+	padding: 2em;
+	padding-bottom: 10%;
+	text-align: left;
+}
+
+#nav {
+	padding:5px;
+	padding-top:20px;
+	margin-bottom: 15px;
+	font-size:small;
+	color: #999;
+}
+
+#footer {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    font-size:11px;
+    text-align:right;
+    background-color: #fff;
+    padding: 20px;
+    padding-right:40px;
+    border-top:1px dotted #ccc;
+    color: #666;
+    width:100%;
+    background-color:#fff;
+}
+
+#header {
+    border-bottom: solid thin;
+    padding-bottom:1%;
+    margin-bottom: 5%;
+}
+
+#header h1 {
+	margin-top: 0;
+	display:inline;
+	font-size:3em;
+	font-family: serif;
+	margin-bottom:20px;
+}
+
+.admin-section {
+	background-image: url("/images/stripes_bg.gif");
+	border-top: 1px solid #BECCCC;
+	border-bottom: 1px solid #BECCCC;
+	padding: 40px;
+	position: relative;
+	text-align: left;
+}
+
+pre.admin-debug {
+	background: none repeat scroll 0 0 #000000;
+	color: #00FF00;
+	font-size: 14px;
+	margin: 0;
+	padding: 1em;
+}
+
+p.error {
+	background-color: #f99;
+}
+
+p.message {
+	background-color: #9f9;
+}
+
+
+/*pagination*/
+#pagination{
+
+}
+
+/* pagination header */
+.pag_head{margin:0 0 10px;text-align:center;border: 1px solid #fff;display:none;}
+
+/* pagination active items */
+.ds_pag{
+    text-decoration: none;
+    border: 1px solid #AAA;
+    padding: 0.3em 0.5em;
+    color: #0BBDFF;
+    margin: 0 2px;
+    background:#fff;
+}
+
+/* pagination inactive items */
+.pag_inactive{
+    border: 1px solid #AAA;
+    padding: 0.3em 0.5em;
+    color: #999;
+    margin: 0 2px;
+    background:#fff;
+}
+/* pagination ellipses */
+.pag_ellipses{
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 0.1em 0.1em;
+    color: #999;
+    margin: 0;
+    background:#fff;
+}
+
+#reset {
+    float:right;
+    font-size: 1.5em;
+    font-weight:700;
+    border: solid thin;
+    padding:1%;
+    background-color:#eee;
+    display:none;
+}
+
+label {
+    font-size:3em;
+    display:block;
+    width:50%;
+    float:right;
+    padding-top:15px;
+}
+
+input,button {
+    border: solid thin;
+    font-size: 3em;
+    font-family:sans-serif;
+}
+
+input {
+    padding: 10px;
+    padding-top:15px;
+}
+
+input[type=text] {
+    width:40%;
+}
+
+input[type=submit] {
+    padding: 25px;
+    border:solid thin;
+    font-weight:700;
+}
+
+#airport_timer div {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#airport_wrapper {
+
+}
+
+.airport_name {
+    font-weight: 700;
+}
+
+#terminal_wrapper {
+    display:none;
+}
+
+.terminal_name {
+    font-weight: 700;
+}
+
+#checkpoint_wrapper {
+    display:none;
+}
+
+#checkpoint_wrapper label {
+    font-size: 1.5em;
+    color: #666;
+}
+
+#gate_wrapper {
+    display:none;
+}
+
+#timer_wrapper {
+    display:none;
+    margin-top:3%;
+}
+
+#timer_start{
+    padding:2%;
+    margin-right:3%;
+}
+
+#timer_stop {
+    padding:2%;
+    display:none;
+}
+
+#stopwatch {
+    display:none;
+    font-size:7em;
+    color:#999;
+}
+
+#commentary {
+    display:none;
+    font-size:2em;
+    color:#999;
+    margin-bottom:15%;
+    text-align:left;
+    max-width:700px;
+}
+
+#confirm {
+    display:none;
+    font-size:3em;
+    margin-bottom:20%;
+    border: sold thin;
+}
+
+#submit_wrapper {
+    display:none;
+    text-align:center;
+}
+
+#submit {
+    padding: 2%;
+    font-size: 1.5em;
+}
+
+#tweet {
+	font-size: small;
+	display: block;
+	margin-top:25px;
+}
+
+.image {
+    text-align:center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.image img {
+	border: 1px dotted #999;
+	padding:10px;
+}

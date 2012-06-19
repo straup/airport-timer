@@ -1,0 +1,13 @@
+{assign var='page_title' value='Sign out'}
+{include file='inc_head.txt'}
+
+<p style="text-align:center;">Are you sure you want to sign out?</p>
+
+<form action="/signout/" method="post" accept-encoding="UTF-8" style="text-align:center;margin-top:5%;">
+	{$crumb_key|crumb_input}
+	<input type="hidden" name="done" value="1" />
+	<input type="submit" value="YES" style="margin-right:5%;" />
+	<input type="submit" value="NO" onclick="javascript:location.href='{$cfg.abs_root_url}';return false;"/>
+</form>
+
+{include file='inc_foot.txt'}
