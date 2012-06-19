@@ -18,7 +18,7 @@
 		$data = json_decode($rsp['body'], 'as hash');
 
 		if (! $data){
-			return not_ok("failed to parse response");
+			return not_okay("failed to parse response");
 		}
 
 		# pagination goes here
@@ -28,7 +28,7 @@
 			'pagination' => null,
 		);
 
-		return ok($out);
+		return okay($out);
 	}
 
 	#################################################################
@@ -59,7 +59,7 @@
 		$headers = $rsp['headers'];
 
 		if (! preg_match("!^http://api.pachube.com/v2/feeds/(\d+)$!", $headers['location'], $m)){
-			return not_ok("missing location");
+			return not_okay("missing location");
 		}
 
 		$data["id"] = $m[1];
@@ -68,7 +68,7 @@
 			'feed' => $data,
 		);
 
-		return ok($out);
+		return okay($out);
 	}
 
 	#################################################################
@@ -102,7 +102,7 @@
 			'datastream' => $ds,
 		);
 
-		return ok($rsp);
+		return okay($rsp);
 	}
 
 	#################################################################
@@ -152,7 +152,7 @@
 
 		if ((! $rsp['ok']) && (isset($data['errors']))){
 			$err_str = (is_array($data['errors'])) ? implode(";", $data['errors']) : $data['errors'];
-			return not_ok($err_str);
+			return not_okay($err_str);
 		}
 
 		if (! $rsp['ok']){

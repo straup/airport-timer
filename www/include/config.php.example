@@ -31,6 +31,10 @@
 	$GLOBALS['cfg']['pachube_api_endpoint'] = 'http://api.pachube.com/v2/';	
 	$GLOBALS['cfg']['pachube_api_key'] = 'YER-PACHUBE-APIKEY';
 
+	# this is not ready yet (20120618/straup)
+	# $GLOBALS['cfg']['cosm_api_endpoint'] = 'http://api.cosm.com/v2/';
+	# $GLOBALS['cfg']['cosm_api_key'] = 'YER-COSM-APIKEY';
+
 	$GLOBALS['cfg']['twitter_oauth_key'] = 'YER-TWITTER-OAUTH-KEY';
 	$GLOBALS['cfg']['twitter_oauth_secret'] = 'YER-TWITTER-OAUTH-SECRET';	
 	$GLOBALS['cfg']['twitter_api_perms'] = 'write';
